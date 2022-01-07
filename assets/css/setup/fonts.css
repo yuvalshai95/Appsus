@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&family=Roboto:ital,wght@1,100&display=swap');
+
+@font-face {
+  font-family: 'notes-font';
+  src: url('../../fonts/comici.ttf');
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../../fonts/Lato-Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url('../../fonts/Lato-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'marvel';
+  src: url('../../fonts/Marvel-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/Roboto-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/Roboto-Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+.note-editor {
+    opacity: 1;
+    transition: 0.7s ease-out;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    color: gray;
+
+}
+
+
+.note-editor>* {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.note-preview:hover>.note-editor {
+    opacity: 1;
+    color: darkgrey;
+    /* margin-left: 1.5rem; */
+    font-size: 1.3rem;
+}
+
+
+.note-preview:hover>.fa-thumbtack {
+    opacity: 1;
+
+}
+
+
+.note-editor:hover {}
+
+
+.note-editor .color-picker {
+    position: absolute;
+    right: 5%;
+    bottom: 100%;
+}

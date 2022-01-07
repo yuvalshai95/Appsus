@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.header-container {
+  border-bottom: 1px solid lightgray;
+}
+
+.header-container .keep-logo {
+  position: absolute;
+  left: 110%;
+  top: -100%;
+  width: 50px;
+}
+
+.logo-container a {
+  position: relative;
+}
+
+.header .fa-th-large {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #282828;
+  padding: 0.3em;
+}
+.header .fa-th-large:hover {
+  background-color: rgb(224, 224, 224);
+  border-radius: 50%;
+}
+
+.logo-container .logo-txt {
+  cursor: pointer;
+  font-family: marvel;
+  font-size: 3rem;
+  transition: 0.5s ease-in-out;
+  color: #282828;
+}
+
+.menu-container {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-item p {
+  font-family: Roboto;
+  color: #282828;
+}
+
+/* .main-nav ul>*:not(:last-child) {
+  margin-inline-end: 1rem;
+} */
+
+/* .main-nav ul li a {
+  color: #1d3557;
+} */
+
+/* .main-nav ul li a.active {
+  color: #e63946;
+} */

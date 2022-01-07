@@ -1,0 +1,58 @@
+.note-list {
+    text-align: center;
+    margin: 20px auto;
+    columns: 2;
+    column-gap: 30px;
+    align-items: center;
+}
+
+iframe {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+.main-layout span.sub-title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    color: gray;
+    line-height: 24px;
+    font-size: 22px;
+    margin-left: 3%;
+
+}
+
+
+/* .note-list .search-container {
+    position: relative;
+    margin-top: 35px;
+    text-align: center;
+
+} */
+
+.note-list .note-preview {
+    transition: 0.3s ease-in-out;
+    break-inside: avoid;
+    line-break: anywhere;
+    min-width: 140px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-bottom: 40px;
+    font-family: "notes-font";
+    line-height: 1.7rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+.note-preview img {
+    width: 100%;
+    object-fit: cover;
+}

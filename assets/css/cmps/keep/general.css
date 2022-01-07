@@ -1,0 +1,11 @@
+.note-list .note-preview div.txt-content {}
+
+.txt-content:focus {
+    border: none;
+    outline: none;
+
+}
+
+.note-list-msg {
+    font-family: Roboto;
+}

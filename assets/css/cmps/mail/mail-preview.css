@@ -1,0 +1,116 @@
+.mail-preview {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #29292914;
+  padding: 0.7rem;
+}
+
+.mail-preview:hover {
+  cursor: pointer;
+  background-color: rgba(214, 214, 214, 0.801);
+}
+
+.read {
+  background-color: rgba(240, 240, 240, 0.623);
+}
+
+.mail-preview.read > * {
+  font-weight: normal;
+}
+
+.mail-preview.unread {
+  font-weight: bold;
+}
+
+.mail-preview-star {
+  color: rgb(188, 188, 188);
+
+  transition: 0.4s;
+}
+
+.mail-preview-star.active-star {
+  color: #f2c16b;
+}
+
+.mail-preview-delete {
+  color: #e34d4d;
+  opacity: 0.7;
+
+  transition: opacity 0.2s;
+}
+
+.mail-preview-delete:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.mail-preview-subject {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
+}
+
+.actions-time {
+  text-align: right;
+}
+
+.mail-preview-body {
+  opacity: 0.4;
+  max-width: 40rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.mail-preview-body-container {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mail-preview-actions {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.actions-btns {
+  align-self: flex-end;
+  gap: 5px;
+}
+
+.btns-hover {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+}
+
+.mail-preview:hover .btns-hover {
+  opacity: 1;
+}
+
+@media (min-width: 1020px) {
+  .mail-preview {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+  .mail-preview-from {
+    font-size: 1rem;
+    display: flex;
+    margin-bottom: 0;
+  }
+}
+
+/* MOBILE ONLY */
+@media (max-width: 1020px) {
+  .btns-hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Roboto;
+    color: #282828;
+    width: 100%;
+    height: 6vh;
+    background-color: #fbfbfb;
+    border-top: 1px solid lightgray;
+    margin-top: 50px;
+}
+
+.footer-content .fa-copyright {
+    margin-right: 0.5rem;
+}

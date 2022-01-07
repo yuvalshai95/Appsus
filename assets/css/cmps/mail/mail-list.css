@@ -1,0 +1,20 @@
+.mail-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 10rem;
+  flex-grow: 1;
+}
+
+.mail-list-header {
+  display: flex;
+  background-color: #292929;
+  height: 1.5rem;
+  color: #f0eeee;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-folder {
+  text-transform: capitalize;
+}

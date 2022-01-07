@@ -1,0 +1,50 @@
+.todo-done {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+
+.note-list .note-preview .note-todo-input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-square {
+    cursor: pointer;
+
+}
+
+.todo i:last-child {
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+.todo span {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+.note-list ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.todo .fa-square {
+    margin: 0;
+}
+
+.todo .fa-minus-circle {
+    color: gray;
+    cursor: pointer;
+
+}

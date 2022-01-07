@@ -1,0 +1,19 @@
+.color-picker {
+    display: flex;
+    align-items: center;
+
+}
+
+.color-picker>*:not(:last-child) {
+    margin-inline-end: 0.45rem;
+}
+
+
+.color-picker .color-value {
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid darkslategray;
+    transition: 0.25s ease-in-out;
+}

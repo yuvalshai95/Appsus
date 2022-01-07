@@ -1,0 +1,58 @@
+.book-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+
+.filter-title {
+  font-family: marvel;
+  font-size: 1.5rem;
+}
+
+.filter-container .add-book {
+  justify-content: center;
+}
+
+.book-filter button {
+  background-color: #a8dadc;
+  color: #f1faee;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+
+  transition: background-color 0.3s;
+}
+
+.book-filter button:hover {
+  background-color: #6aa0a1;
+  cursor: pointer;
+}
+
+.book-filter input {
+  outline: none;
+  padding: 0.5rem;
+}
+
+.add-book-title {
+  font-family: marvel;
+  font-size: 1.2rem;
+}
+
+.add-book input {
+  outline: none;
+  padding: 0.5rem;
+}
+
+.filter-container input:focus {
+  border-color: #4285f4;
+}
+
+@media (min-width: 780px) {
+  .book-filter {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

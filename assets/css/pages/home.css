@@ -1,0 +1,269 @@
+/* ANIMATIONS */
+@keyframes right {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+@keyframes top {
+  0% {
+    transform: translateY(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+@keyframes float-up-20 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  text-align: center;
+  height: 85vh;
+  border-bottom: 1px solid #d3d3d370;
+  margin-bottom: 20px;
+}
+
+.hero-container .hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-right {
+  animation: left 1.5s ease-in-out;
+}
+
+.yellow-circle,
+.blue-circle,
+.red-circle,
+.green-circle {
+  animation: float-up-20 3s ease-in-out infinite;
+}
+
+.hero-right svg {
+  width: 300px;
+  height: 300px;
+}
+
+.hero-left .hero-txt {
+  animation: right 1.5s ease-in-out;
+}
+
+.hero-left .hero-txt p {
+  margin-bottom: 2rem;
+  font-family: Roboto;
+  font-size: 2rem;
+}
+
+.hero-left a .cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 15rem;
+  font-size: 1.5rem;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(234, 67, 53);
+  color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  animation: top 1s ease-in-out;
+
+  transition: transform 0.3s;
+}
+
+.hero-left a .cta-btn:hover {
+  transform: scale(1.05);
+}
+
+.cards-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  font-family: Roboto;
+  font-size: 2rem;
+  color: #282828;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0px 50px;
+  margin-bottom: 40px;
+  font-family: Roboto;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 20px;
+  margin: 0 auto;
+}
+.card-container .card .card-btn {
+  background-color: #fff;
+  color: #1a73e8;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+
+  transition: background-color 0.3s, border 0.3s;
+}
+.card-container .card .card-btn:hover {
+  background-color: #f5f5f5;
+  border: 1px solid #1a73e8;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-family: Roboto;
+  font-size: 2rem;
+  color: #282828;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 50px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 980px;
+  width: 100%;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px;
+  font-family: Roboto;
+
+  transition: border 0.5s;
+}
+
+.about:hover {
+  border: 1px solid #1a73e8;
+}
+
+.about img {
+  border-radius: 100%;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 2px solid rgb(224, 224, 224);
+}
+
+.about-content h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  text-align: center;
+}
+
+.about .social {
+  display: flex;
+  gap: 10px;
+}
+
+.about .social a {
+  background-color: #fff;
+  color: #282828;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about .social a:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+@media (min-width: 780px) {
+  .hero-right svg {
+    width: 380px;
+    height: 380px;
+    margin-bottom: 100px;
+  }
+  .card-container .card {
+    width: 494px;
+  }
+}
+@media (min-width: 1020px) {
+  .hero-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .hero-right svg {
+    padding-bottom: 0px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    margin-bottom: 150px;
+  }
+  .about {
+    flex-direction: row;
+  }
+  .about img {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-right svg {
+    width: 400px;
+    height: 400px;
+  }
+}

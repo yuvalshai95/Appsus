@@ -1,0 +1,32 @@
+.filter-container .add-book {
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+
+.add-book .add-book-list {
+  margin: 1rem 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.google-book-preview {
+  background: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 4px;
+  color: #292929;
+  position: relative;
+}
+
+.google-book-preview .google-book-add {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transition: color 0.3s;
+}
+
+.google-book-add:hover {
+  color: #4285f4;
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.book-preview {
+  background-color: #f3f3f3;
+  padding: 1rem;
+  color: #282828;
+  box-shadow: rgb(14 30 37 / 0%) 0px 2px 4px 0px, rgb(14 30 37 / 26%) 0px 2px 5px 0px;
+  border: 1px solid lightgray;
+}
+
+.book-preview-img {
+  width: 240px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.book-preview-title {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.book-preview {
+  transition: 0.3s ease-in-out;
+}
+
+.book-preview:hover {
+  background-color: #ffeeca;
+  box-shadow: rgb(14 30 37 / 0%) 0px 2px 4px 0px, rgb(14 30 37 / 26%) 0px 2px 11px 4px;
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.book-preview-price {
+  text-align: center;
+  margin-top: 1rem;
+}
